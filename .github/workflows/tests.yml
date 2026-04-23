@@ -1,0 +1,57 @@
+name: Run Playwright Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout gift-hint
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install gift-hint dependencies
+        run: npm ci
+
+      - name: Start Next.js server
+        run: npm run dev &
+        env:
+          PORT: 3000
+
+      - name: Checkout gift-hint-tests
+        uses: actions/checkout@v4
+        with:
+          repository: yuliasteele/gift-hint-tests
+          path: gift-hint-tests
+
+      - name: Install test dependencies
+        working-directory: gift-hint-tests
+        run: npm ci
+
+      - name: Install Playwright browsers
+        working-directory: gift-hint-tests
+        run: npx playwright install --with-deps chromium
+
+      - name: Wait for server to be ready
+        run: npx wait-on http://localhost:3000 --timeout 30000
+
+      - name: Run Playwright tests
+        working-directory: gift-hint-tests
+        run: npx playwright test
+
+      - name: Upload test report
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: gift-hint-tests/playwright-report/
