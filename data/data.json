@@ -1,0 +1,123 @@
+[
+  {
+    "name": "Mom",
+    "gifts": [
+      {
+        "id": "1766537015311",
+        "idea": "card",
+        "price": 5,
+        "createdAt": 1766537015311,
+        "archived": true
+      },
+      {
+        "id": "1766536938137",
+        "idea": "tickets to Broadway show",
+        "price": 250,
+        "createdAt": 1766536938137,
+        "archived": true
+      },
+      {
+        "id": "1766536916307",
+        "idea": "recipe book",
+        "price": 30,
+        "createdAt": 1766536916307,
+        "archived": false
+      },
+      {
+        "id": "1766536900662",
+        "idea": "flowers",
+        "price": 25,
+        "createdAt": 1766536900662,
+        "archived": false
+      }
+    ]
+  },
+  {
+    "name": "Dad",
+    "gifts": [
+      {
+        "id": "1766786918397",
+        "idea": "T-shirt",
+        "price": 20,
+        "createdAt": 1766786918397,
+        "archived": false
+      },
+      {
+        "id": "1766536966445",
+        "idea": "card",
+        "price": 5,
+        "createdAt": 1766536966445,
+        "archived": true
+      },
+      {
+        "id": "1766536955739",
+        "idea": "wireless headphones",
+        "price": 200,
+        "createdAt": 1766536955739,
+        "archived": false
+      }
+    ]
+  },
+  {
+    "name": "Sister",
+    "gifts": [
+      {
+        "id": "1766786893510",
+        "idea": "box of chocolates",
+        "price": 20,
+        "createdAt": 1766786893510,
+        "archived": false
+      },
+      {
+        "id": "1766537003166",
+        "idea": "card",
+        "price": 5,
+        "createdAt": 1766537003166,
+        "archived": true
+      },
+      {
+        "id": "1766536977112",
+        "idea": "Necklace",
+        "price": 100,
+        "createdAt": 1766536977112,
+        "archived": false
+      }
+    ]
+  },
+  {
+    "name": "Alice (coworker 1)",
+    "gifts": [
+      {
+        "id": "1766537044327",
+        "idea": "amazon gift card",
+        "price": 50,
+        "createdAt": 1766537044327,
+        "archived": false
+      }
+    ]
+  },
+  {
+    "name": "Michael (coworker 2)",
+    "gifts": [
+      {
+        "id": "1766537064412",
+        "idea": "Home Depot gift card",
+        "price": 50,
+        "createdAt": 1766537064412,
+        "archived": false
+      }
+    ]
+  },
+  {
+    "name": "Natalia (friend 1)",
+    "gifts": [
+      {
+        "id": "1766783975994",
+        "idea": "Echo Dot",
+        "price": 100,
+        "createdAt": 1766783975994,
+        "archived": true
+      }
+    ]
+  }
+]
