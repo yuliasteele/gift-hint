@@ -312,7 +312,7 @@ export default function Home() {
                   type="submit"
                   className="w-full rounded-lg bg-indigo-600 px-6 py-3 text-base font-semibold text-white shadow-md transition-all hover:bg-indigo-700 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
-                  Add Gift Idea 🎁
+                  Add Gift Idea
                 </button>
               </div>
             </div>
